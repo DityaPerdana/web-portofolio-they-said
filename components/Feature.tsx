@@ -14,7 +14,7 @@ import {
   IconShield,
   IconCode,
   IconDeviceLaptop,
-  IconBrandWhatsapp,
+  IconBrandAndroid,
 } from "@tabler/icons-react";
 import { motion } from "motion/react";
 
@@ -439,30 +439,39 @@ const SkeletonEight = () => {
 };
 
 const SkeletonNine = () => {
-  const balls = Array.from({ length: 8 });
-
   return (
     <div className="flex flex-1 w-full h-full min-h-[6rem] bg-dot-black/[0.2] dark:bg-dot-white/[0.2] items-center justify-center">
-      <div className="relative w-32 h-32">
-        {balls.map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-3 h-3 bg-indigo-500 rounded-full"
-            animate={{
-              x: Math.cos(i * (Math.PI / 4)) * 40,
-              y: Math.sin(i * (Math.PI / 4)) * 40,
-              scale: [1, 1.2, 1],
-              opacity: [0.6, 1, 0.6],
-            }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              delay: i * 0.2,
-              ease: "easeInOut",
-            }}
-          />
-        ))}
-        <div className="absolute inset-0 flex items-center justify-center">
+      <div className="relative w-40 h-40">
+        {Array.from({ length: 8 }).map((_, i) => {
+          const angle = (i * Math.PI) / 4;
+          const x = Math.cos(angle) * 50;
+          const y = Math.sin(angle) * 50;
+
+          return (
+            <motion.div
+              key={i}
+              className="absolute w-3 h-3 bg-indigo-500 rounded-full"
+              style={{
+                left: "50%",
+                top: "50%",
+                marginLeft: "-6px",
+                marginTop: "-6px",
+              }}
+              animate={{
+                x,
+                y,
+                scale: [1, 1.2, 1],
+                opacity: [0.6, 1, 0.6],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                delay: i * 0.2,
+              }}
+            />
+          );
+        })}
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           <motion.div
             className="w-16 h-16 bg-white dark:bg-black rounded-full border-2 border-indigo-400 flex items-center justify-center shadow-lg"
             animate={{ rotate: 360 }}
@@ -478,7 +487,6 @@ const SkeletonNine = () => {
 
 // NEW SKELETON #1: Interactive Code Editor
 const SkeletonTen = () => {
-  const [isTyping, setIsTyping] = useState(false);
   const codeLines = [
     "function greet() {",
     '  return "Hello, world!";',
@@ -516,30 +524,19 @@ const SkeletonTen = () => {
                   >
                     {line}
                   </motion.span>
-                  {index === 1 && isTyping && (
-                    <motion.span
-                      className="inline-block w-2 h-4 bg-black dark:bg-white ml-0.5"
-                      animate={{ opacity: [1, 0, 1] }}
-                      transition={{ duration: 0.8, repeat: Infinity }}
-                    />
-                  )}
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Control bar */}
-        <motion.div
-          className="bg-neutral-100 dark:bg-neutral-900 p-2 flex justify-center"
-          whileHover={{ backgroundColor: "#e5e5e5", color: "#000" }}
-          onClick={() => setIsTyping(!isTyping)}
-        >
-          <button className="text-xs flex items-center space-x-1">
+        {/* Footer with static text */}
+        <div className="bg-neutral-100 dark:bg-neutral-900 p-2 flex justify-center">
+          <div className="text-xs flex items-center space-x-1 text-neutral-500">
             <IconCode className="h-3 w-3" />
-            <span>{isTyping ? "Stop Editing" : "Start Editing"}</span>
-          </button>
-        </motion.div>
+            <span>Clean Code</span>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -550,7 +547,7 @@ const SkeletonEleven = () => {
   const [currentDevice, setCurrentDevice] = useState("phone");
   const devices = ["phone", "tablet", "laptop"];
   const deviceIcons = {
-    phone: <IconBrandWhatsapp className="h-8 w-8 text-green-500" />,
+    phone: <IconBrandAndroid className="h-8 w-8 text-green-500" />,
     tablet: <IconPalette className="h-8 w-8 text-purple-500" />,
     laptop: <IconDeviceLaptop className="h-8 w-8 text-blue-500" />,
   };
@@ -622,17 +619,6 @@ const SkeletonEleven = () => {
                 <div className="w-72 h-4 bg-neutral-800 dark:bg-neutral-700 rounded-b-lg"></div>
               </div>
             )}
-
-            <motion.div
-              className="absolute bottom-0 right-0 bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center"
-              animate={{
-                rotate: [0, 10, -10, 10, 0],
-                scale: [1, 1.1, 1],
-              }}
-              transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
-            >
-              <span className="text-xs">+</span>
-            </motion.div>
           </motion.div>
         </div>
       </div>
