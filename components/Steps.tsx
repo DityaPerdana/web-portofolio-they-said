@@ -159,60 +159,6 @@ export function Steps() {
           />
         ))}
       </div>
-
-      <div className="mt-16 flex flex-col items-center justify-center mx-auto sm:hidden md:block ">
-        <div className="relative mb-8 h-20 w-full max-w-3xl mx-auto overflow-hidden hidden md:block">
-          {steps.map((step) => (
-            <motion.div
-              key={step.stepNumber}
-              className="absolute inset-0 flex items-center justify-center"
-              initial={{ opacity: 0 }}
-              animate={{
-                opacity: activeStep === step.stepNumber ? 1 : 0,
-                x:
-                  activeStep === step.stepNumber
-                    ? 0
-                    : activeStep > step.stepNumber
-                      ? -100
-                      : 100,
-              }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="text-center w-full px-4">
-                <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400">
-                  {step.title}
-                </h3>
-                <p className="text-neutral-600 dark:text-neutral-400">
-                  {step.description}
-                </p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.4 }}
-        viewport={{ once: true }}
-        className="mx-auto mt-16 max-w-3xl rounded-lg border border-neutral-200 bg-white p-6 text-center shadow-sm dark:border-neutral-800 dark:bg-black"
-      >
-        <h3 className="text-xl font-bold text-neutral-800 dark:text-neutral-200">
-          Ready to start your project?
-        </h3>
-        <p className="mt-2 text-neutral-600 dark:text-neutral-400">
-          Let's work together to bring your vision to life with our proven
-          process.
-        </p>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="mt-4 rounded-lg bg-blue-600 px-6 py-3 text-white shadow-lg transition-colors hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700"
-        >
-          Get Started Today
-        </motion.button>
-      </motion.div>
     </section>
   );
 }

@@ -17,15 +17,15 @@ const Navigation = () => {
   const navItems = [
     {
       name: "Home",
-      link: "Home",
+      link: "/",
     },
     {
       name: "About Us",
-      link: "About",
+      link: "/about",
     },
     {
       name: "Services",
-      link: "Services",
+      link: "/services",
     },
     // {
     //   name: "Contact",

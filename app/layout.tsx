@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from "@/components/NavbarDemo";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { Suspense } from "react";
+import { ServiceCTA } from "@/components/services/ServiceCTA";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
           <Suspense>
             <Navigation />
             {children}
+            <ServiceCTA />
           </Suspense>
         </ThemeProvider>
       </body>
