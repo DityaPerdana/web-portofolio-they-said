@@ -27,14 +27,14 @@ const Navigation = () => {
       name: "Services",
       link: "Services",
     },
-    {
-      name: "Contact",
-      link: "#contact",
-    },
-    {
-      name: "Blog",
-      link: "#blog",
-    },
+    // {
+    //   name: "Contact",
+    //   link: "#contact",
+    // },
+    // {
+    //   name: "Blog",
+    //   link: "#blog",
+    // },
     {
       name: "Projects",
       link: "#projects",
