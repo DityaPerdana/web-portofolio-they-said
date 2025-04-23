@@ -19,7 +19,7 @@ const processSteps = [
     details:
       "Our discovery process involves in-depth research, stakeholder interviews, and competitive analysis to establish a solid foundation for your project.",
     icon: <RocketIcon className="h-8 w-8" />,
-    color: "blue",
+    color: "yellow",
   },
   {
     id: 2,
@@ -39,7 +39,7 @@ const processSteps = [
     details:
       "We employ agile methodologies to develop robust, scalable solutions that are maintainable and future-proof, with regular client check-ins throughout.",
     icon: <IconCode className="h-8 w-8" />,
-    color: "indigo",
+    color: "green",
   },
   {
     id: 4,
@@ -172,7 +172,7 @@ export function ServiceProcess() {
             <div className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 bg-gray-200 dark:bg-gray-700"></div>
 
             {/* Timeline points */}
-            <div className="relative">
+            <div className="relative z-50">
               {processSteps.map((step) => (
                 <motion.div
                   key={step.id}
@@ -194,7 +194,7 @@ export function ServiceProcess() {
                         },
                       }}
                       onClick={() => setActiveStep(step.id)}
-                      className={`flex h-8 w-8 cursor-pointer items-center justify-center rounded-full ${
+                      className={`flex h-8 w-8 cursor-pointer items-center justify-center rounded-full z-50 ${
                         activeStep === step.id
                           ? `bg-${step.color}-500 ring-4 ring-${step.color}-200 dark:ring-${step.color}-900/30`
                           : "bg-white dark:bg-gray-800"
@@ -253,7 +253,7 @@ export function ServiceProcess() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-            className={`mx-auto max-w-3xl rounded-xl bg-${processSteps[activeStep - 1].color}-50 p-8 shadow-lg dark:bg-${processSteps[activeStep - 1].color}-900/10 hidden md:block`}
+            className={`mx-auto max-w-3xl rounded-xl z-50 bg-${processSteps[activeStep - 1].color}-50 p-8 shadow-lg dark:bg-${processSteps[activeStep - 1].color}-900/10 hidden md:block`}
           >
             <div className="flex items-center gap-4">
               <div

@@ -1,6 +1,7 @@
 import { HeroSectionOne } from "@/components/Hero";
 import { Feature } from "@/components/Feature";
 import { Steps } from "@/components/Steps";
+import { FaqAccordion } from "@/components/FaqAccordions";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroSectionOne />
       <Feature />
       <Steps />
+      <FaqAccordion />
     </>
   );
 }

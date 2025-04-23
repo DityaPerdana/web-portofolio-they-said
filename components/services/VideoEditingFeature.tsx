@@ -90,12 +90,13 @@ export function VideoEditingFeature() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
             className="relative aspect-video overflow-hidden rounded-2xl shadow-2xl"
-            href="#"
+            href="https://drive.google.com/file/d/1e0jwLQBKYhxoDURi0zSn4xhAUSscMqO_/view?usp=drive_link"
+            target="_blank"
           >
-            <div className="absolute inset-0 bg-gradient-to-tr from-pink-500/20 to-purple-500/20 dark:from-pink-800/40 dark:to-purple-800/40 z-10"></div>
+            <div className="absolute inset-0 z-10"></div>
             {/* Video thumbnail or video player would go here */}
             <img
-              src="https://cdn.prod.website-files.com/66d6a414a3c4f517cf7a40b1/673c7dff79a46140fa135096_40f7e4ff-04cc-46dc-a1cc-4bbba4295813.webp"
+              src="/thumbnail.png"
               alt="Video Editing Showcase"
               className="w-full h-full object-cover"
             />

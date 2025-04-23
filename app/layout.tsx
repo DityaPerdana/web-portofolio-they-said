@@ -5,6 +5,8 @@ import Navigation from "@/components/NavbarDemo";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { Suspense } from "react";
 import { ServiceCTA } from "@/components/services/ServiceCTA";
+import Footer from "@/components/Footer";
+import { LoadingProvider } from "@/context/LoadingContent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,11 +34,14 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider>
-          <Suspense>
-            <Navigation />
-            {children}
-            <ServiceCTA />
-          </Suspense>
+          <LoadingProvider>
+            <Suspense>
+              <Navigation />
+              {children}
+              <ServiceCTA />
+              <Footer />
+            </Suspense>
+          </LoadingProvider>
         </ThemeProvider>
       </body>
     </html>

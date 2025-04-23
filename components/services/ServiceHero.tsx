@@ -93,9 +93,9 @@ export function ServiceHero() {
                     icon: "📈",
                   },
                   {
-                    title: "Advertising",
+                    title: "Education",
                     color: "bg-amber-500",
-                    icon: "📣",
+                    icon: "🎓",
                   },
                   {
                     title: "Cloud Services",

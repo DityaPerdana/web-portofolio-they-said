@@ -6,6 +6,8 @@ import { ServiceProcess } from "@/components/services/ServiceProcess";
 import { ServiceTestimonials } from "@/components/services/ServiceTestimonial";
 import { ITSolutionsFeature } from "@/components/services/ITSolutionFeature";
 import { VideoEditingFeature } from "@/components/services/VideoEditingFeature";
+import { ServicesEducation } from "@/components/services/ServicesEducation";
+import { FeatureShowcase3D } from "@/components/services/FeatureShowcase";
 
 export const metadata: Metadata = {
   title: "Our Services | Burung Hantu Digital Agency",
@@ -19,8 +21,10 @@ export default function ServicesPage() {
       <ServiceHero />
       <ServiceOverview />
       <ServiceDetails />
+      <FeatureShowcase3D />
       <VideoEditingFeature />
       <ITSolutionsFeature />
+      <ServicesEducation />
       <ServiceProcess />
       <ServiceTestimonials />
     </main>

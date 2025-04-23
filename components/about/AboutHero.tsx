@@ -10,7 +10,7 @@ export function AboutHero() {
 
       {/* Optional: Background image */}
       <div className="absolute inset-0 z-0">
-        <div className="h-full w-full bg-[url('/about-hero-bg.jpg')] bg-cover bg-center bg-no-repeat opacity-30 dark:opacity-20"></div>
+        <div className="h-full w-full bg-[url('https://pict.sindonews.net/dyn/850/pena/news/2022/07/13/767/825341/5-foto-alam-semesta-pertama-yang-direkam-teleskop-james-webb-semua-spektakuler-uxx.jpg')] bg-cover bg-center bg-no-repeat opacity-30 dark:opacity-20"></div>
       </div>
 
       <div className="container relative z-10 mx-auto px-4">

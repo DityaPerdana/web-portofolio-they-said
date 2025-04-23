@@ -4,55 +4,51 @@ import { useState, useEffect } from "react";
 import { IconQuote, IconStar, IconStarFilled } from "@tabler/icons-react";
 
 const testimonials = [
-  {
-    id: 1,
-    content: "Working with the team was transformative for our business.",
-    author: "Sarah Johnson",
-    position: "CEO, TechStart Inc.",
-    rating: 5,
-    service: "Web Development",
-    image: "https://i.pravatar.cc/150?img=32",
-  },
-  {
-    id: 2,
-    content:
-      "The mobile app they built for us has received outstanding feedback from our users.",
-    author: "David Chen",
-    position: "Product Manager, HealthConnect",
-    rating: 5,
-    service: "Mobile Development",
-    image: "https://i.pravatar.cc/150?img=69",
-  },
-  {
-    id: 3,
-    content: "Their UI/UX design work completely transformed our platform.",
-    author: "Michelle Rodriguez",
-    position: "COO, EdTech Solutions",
-    rating: 5,
-    service: "UI/UX Design",
-    image: "https://i.pravatar.cc/150?img=10",
-  },
-  {
-    id: 4,
-    content:
-      "The digital marketing strategy they implemented has driven remarkable results. ",
-    author: "James Wilson",
-    position: "Marketing Director, GreenEarth",
-    rating: 4,
-    service: "Digital Marketing",
-    image: "https://i.pravatar.cc/150?img=59",
-  },
+  // {
+  //   id: 1,
+  //   content: "Working with the team was transformative for our business.",
+  //   author: "Sarah Johnson",
+  //   position: "CEO, TechStart Inc.",
+  //   rating: 5,
+  //   service: "Web Development",
+  //   image: "https://i.pravatar.cc/150?img=32",
+  // },
 ];
 
 export function ServiceTestimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
+    if (testimonials.length === 0) return;
+
     const interval = setInterval(() => {
       setActiveIndex((current) => (current + 1) % testimonials.length);
     }, 8000);
     return () => clearInterval(interval);
   }, []);
+
+  if (testimonials.length === 0) {
+    return (
+      <section className="bg-gradient-to-b from-white to-gray-50 py-24 dark:from-black dark:to-gray-900/70">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="mx-auto mb-16 max-w-3xl text-center"
+          >
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl dark:text-white">
+              Client Success Stories
+            </h2>
+            <p className="mt-4 text-xl text-gray-600 dark:text-gray-300">
+              No client yet, be our first client
+            </p>
+          </motion.div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="bg-gradient-to-b from-white to-gray-50 py-24 dark:from-black dark:to-gray-900/70">
