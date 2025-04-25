@@ -30,6 +30,7 @@ const Step: React.FC<StepProps> = ({
 }) => {
   return (
     <motion.div
+      id="Steps"
       className={cn(
         "relative flex cursor-pointer items-start rounded-lg border p-4 transition-all",
         isActive

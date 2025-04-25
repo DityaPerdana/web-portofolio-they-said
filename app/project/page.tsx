@@ -1,5 +1,3 @@
-import { ProjectMarque } from "@/components/project/ProjectMarque";
-import { ProjectGrid } from "@/components/project/ProjectGrid";
 import { FeaturedProject } from "@/components/project/FeaturedProject";
 import { ProjectStats } from "@/components/project/ProjectStats";
 import { Metadata } from "next";
@@ -17,9 +15,8 @@ export default function ProjectsPage() {
     <main>
       <ProjectHero />
       <FeaturedProject />
-      <ProjectStats />
-      <ProjectMarque />
       <PortfolioShowcase />
+      <ProjectStats />
     </main>
   );
 }

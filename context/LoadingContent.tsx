@@ -16,22 +16,20 @@ export function LoadingProvider({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  // Show loading screen on initial page load
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // Show loading screen for at least 2 seconds
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
 
-  // Show loading screen when route changes
   useEffect(() => {
     setIsLoading(true);
 
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1500); // Show loading screen for 1.5 seconds on navigation
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, [pathname, searchParams]);

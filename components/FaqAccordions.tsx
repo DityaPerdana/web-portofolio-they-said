@@ -85,7 +85,6 @@ export function FaqAccordion() {
           </p>
         </motion.div>
 
-        {/* Category filter */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
           {categories.map((category) => (
             <motion.button
@@ -105,7 +104,6 @@ export function FaqAccordion() {
           ))}
         </div>
 
-        {/* FAQ items */}
         <motion.div className="max-w-3xl mx-auto" layout>
           <AnimatePresence initial={false}>
             {filteredFaqs.map((faq, index) => (
@@ -191,7 +189,7 @@ export function FaqAccordion() {
             Can't find the answer you're looking for?
           </p>
           <motion.a
-            href="/contact"
+            href="https://wa.me/6283869916635?text=Hello,%20I%20have%20a%20question"
             className="inline-flex items-center justify-center rounded-lg bg-purple-600 px-6 py-3 font-medium text-white shadow-lg transition-colors hover:bg-purple-700"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

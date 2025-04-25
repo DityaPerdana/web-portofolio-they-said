@@ -23,84 +23,70 @@ type TeamMember = {
   };
 };
 
-// Example team data
 const teamMembers: TeamMember[] = [
   {
     id: 1,
-    name: "Tung Tung Sahur",
+    name: "Habib Herdiansyah",
     role: "CEO",
     bio: "Anomali ini blablablabalbalbalbalvabvablablablalbalbalb",
-    imageUrl:
-      "https://i.ppy.sh/867617a4e64b070fc4ccff60251842f0b526f6d1/68747470733a2f2f692e6962622e636f2f5979435859624a2f4b6c65652e6a7067",
-    socialLinks: {
-      twitter: "https://twitter.com",
-      linkedin: "https://linkedin.com",
-      email: "mailto:alex@example.com",
-    },
+    imageUrl: "/photoMember/Habib.webp",
+    socialLinks: {},
   },
   {
     id: 2,
-    name: "Murata",
-    role: "Creative Director",
+    name: "Ramses Corda",
+    role: "CTO",
     bio: "Murata brings artistry to technology, leading our design team with an eye for detail and a passion for user experience that transforms digital interfaces into immersive journeys.",
-    imageUrl:
-      "https://i.ppy.sh/867617a4e64b070fc4ccff60251842f0b526f6d1/68747470733a2f2f692e6962622e636f2f5979435859624a2f4b6c65652e6a7067",
-    socialLinks: {
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-      email: "mailto:sam@example.com",
-    },
+    imageUrl: "/photoMember/RamsesCorda.webp",
+    socialLinks: {},
   },
   {
     id: 3,
-    name: "Tirr.html",
-    role: "Technical Lead",
+    name: "Muhammad Abdullah Azzam",
+    role: "CFO",
     bio: "With a knack for solving complex problems, Jordan oversees our technical strategy and ensures our solutions are robust, scalable, and built with cutting-edge technologies.",
-    imageUrl:
-      "https://i.ppy.sh/867617a4e64b070fc4ccff60251842f0b526f6d1/68747470733a2f2f692e6962622e636f2f5979435859624a2f4b6c65652e6a7067",
-    socialLinks: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com",
-    },
+    imageUrl: "/photoMember/Azzam.webp",
+    socialLinks: {},
   },
   {
     id: 4,
-    name: "Riley Patel",
-    role: "Product Strategy",
-    bio: "Riley crafts our product vision, connecting client needs with technical possibilities. Their strategic insight ensures every project delivers maximum value and impact.",
-    imageUrl:
-      "https://i.ppy.sh/867617a4e64b070fc4ccff60251842f0b526f6d1/68747470733a2f2f692e6962622e636f2f5979435859624a2f4b6c65652e6a7067",
-    socialLinks: {
-      linkedin: "https://linkedin.com",
-      email: "mailto:riley@example.com",
-    },
+    name: "Athar Delano Shaby",
+    role: "Artist",
+    bio: "IM an artist",
+    imageUrl: "/photoMember/AtharDelano.webp",
+    socialLinks: {},
   },
   {
     id: 5,
-    name: "Casey Wilson",
-    role: "Client Success Manager",
+    name: "Abdurrahman Yasir",
+    role: "Editor, Artist",
     bio: "Casey ensures every client interaction exceeds expectations. With a background in psychology and technology, they create partnerships that lead to long-term success.",
-    imageUrl:
-      "https://i.ppy.sh/867617a4e64b070fc4ccff60251842f0b526f6d1/68747470733a2f2f692e6962622e636f2f5979435859624a2f4b6c65652e6a7067",
-    socialLinks: {
-      twitter: "https://twitter.com",
-      linkedin: "https://linkedin.com",
-      email: "mailto:casey@example.com",
-    },
+    imageUrl: "/photoMember/Yasir.webp",
+    socialLinks: {},
   },
   {
     id: 6,
-    name: "Avery Kim",
-    role: "UX Research Lead",
+    name: "Vharel",
+    role: "Business Director",
     bio: "Avery bridges the gap between users and technology, using data-driven insights to shape intuitive digital experiences that resonate with people's real needs.",
-    imageUrl:
-      "https://i.ppy.sh/867617a4e64b070fc4ccff60251842f0b526f6d1/68747470733a2f2f692e6962622e636f2f5979435859624a2f4b6c65652e6a7067",
-    socialLinks: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com",
-    },
+    imageUrl: "/photoMember/Vharel.webp",
+    socialLinks: {},
+  },
+  {
+    id: 7,
+    name: "Muhammad Farhan",
+    role: "Mobile Developer",
+    bio: "Avery bridges the gap between users and technology, using data-driven insights to shape intuitive digital experiences that resonate with people's real needs.",
+    imageUrl: "/photoMember/Farhan.webp",
+    socialLinks: {},
+  },
+  {
+    id: 8,
+    name: "Fatir Adzan Setia",
+    role: "Mobile Developer",
+    bio: "Avery bridges the gap between users and technology, using data-driven insights to shape intuitive digital experiences that resonate with people's real needs.",
+    imageUrl: "/photoMember/Fatir.webp",
+    socialLinks: {},
   },
 ];
 

@@ -95,7 +95,7 @@ const services = [
       "Final Cut Pro",
       "Cinema 4D",
     ],
-    color: "pink",
+    color: "red",
   },
   {
     id: "automation",
@@ -119,7 +119,7 @@ const services = [
       "UiPath",
       "Ansible",
     ],
-    color: "teal",
+    color: "yellow",
   },
   {
     id: "advertisement",
@@ -143,7 +143,7 @@ const services = [
       "TikTok Ads",
       "Programmatic",
     ],
-    color: "amber",
+    color: "red",
   },
   {
     id: "infrastructure",
@@ -168,7 +168,7 @@ const services = [
       "Terraform",
       "VMware",
     ],
-    color: "slate",
+    color: "green",
   },
   {
     id: "custom-dev",
@@ -194,7 +194,7 @@ const services = [
       "AWS",
       "Azure",
     ],
-    color: "indigo",
+    color: "blue",
   },
 ];
 
@@ -215,14 +215,10 @@ export function ServiceDetails() {
     );
   };
 
-  // Group services into rows for better display
-  const serviceRows = [
-    services.slice(0, 4), // First row
-    services.slice(4), // Second row
-  ];
+  const serviceRows = [services.slice(0, 4), services.slice(4)];
 
   return (
-    <section className="bg-gray-50 py-24 dark:bg-gray-900/50">
+    <section className="bg-gray-50 py-24 dark:bg-gray-900/50" id="service">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -389,16 +385,6 @@ export function ServiceDetails() {
                         </motion.div>
                       )}
                     </AnimatePresence>
-                  </div>
-
-                  <div className="mt-8 text-center">
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className={`rounded-lg bg-${getActiveService().color}-600 px-6 py-3 font-medium text-white shadow-lg transition-colors hover:bg-${getActiveService().color}-700`}
-                    >
-                      Learn More About {getActiveService().title}
-                    </motion.button>
                   </div>
                 </div>
               </motion.div>

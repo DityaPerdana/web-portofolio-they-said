@@ -16,50 +16,15 @@ interface FeaturedProject {
 const featuredProjects: FeaturedProject[] = [
   {
     id: 1,
-    title: "E-commerce Platform Redesign",
-    client: "Luxe Retail Co.",
-    description:
-      "Complete redesign and development of a high-traffic e-commerce platform, resulting in a 40% increase in conversion rate and 25% reduction in cart abandonment.",
-    technologies: ["Next.js", "TailwindCSS", "Stripe", "Prisma", "PostgreSQL"],
-    imageUrl: "https://source.unsplash.com/random/1200x800/?ecommerce",
-    link: "/projects/luxe-retail",
+    title: "NyctOwl Nimbus",
+    client: "Personal project by Raditya Alfarisi",
+    description: "online code editor with communication features.",
+    technologies: ["Next.js", "TailwindCSS", "Convex", "Clerk"],
+    imageUrl: "project/nimbusCommunity.webp",
+    link: "https://nyctowl-nimbus.vercel.app/",
     highlights: [
-      "Improved page load speed by 65%",
       "Implemented advanced search with filters",
       "Created fully responsive design system",
-      "Integrated real-time inventory management",
-    ],
-  },
-  {
-    id: 2,
-    title: "Investment Portfolio Dashboard",
-    client: "GlobalFinance Inc.",
-    description:
-      "Developed an interactive dashboard for investment portfolio management with real-time data visualization, custom reporting, and predictive analytics.",
-    technologies: ["React", "D3.js", "Node.js", "Express", "MongoDB"],
-    imageUrl: "https://source.unsplash.com/random/1200x800/?finance",
-    link: "/projects/globalfinance",
-    highlights: [
-      "Real-time market data integration",
-      "Custom chart components",
-      "Portfolio performance analytics",
-      "Secure authentication system",
-    ],
-  },
-  {
-    id: 3,
-    title: "Healthcare Patient Portal",
-    client: "MedCare Systems",
-    description:
-      "Built a secure patient portal allowing users to schedule appointments, view medical records, communicate with providers, and manage prescriptions.",
-    technologies: ["Vue.js", "Firebase", "Tailwind CSS", "HIPAA Compliance"],
-    imageUrl: "https://source.unsplash.com/random/1200x800/?healthcare",
-    link: "/projects/medcare",
-    highlights: [
-      "End-to-end encryption for patient data",
-      "Telemedicine video integration",
-      "Automated appointment reminders",
-      "Electronic health record access",
     ],
   },
 ];
@@ -91,7 +56,6 @@ export function FeaturedProject() {
         </motion.div>
 
         <div className="flex flex-col lg:flex-row gap-12 items-center">
-          {/* Project Image */}
           <motion.div
             key={`image-${currentIndex}`}
             initial={{ opacity: 0, x: -50 }}
@@ -119,7 +83,6 @@ export function FeaturedProject() {
             </div>
           </motion.div>
 
-          {/* Project Details */}
           <motion.div
             key={`details-${currentIndex}`}
             initial={{ opacity: 0, x: 50 }}
@@ -180,32 +143,6 @@ export function FeaturedProject() {
                   >
                     {tech}
                   </motion.span>
-                ))}
-              </div>
-            </div>
-
-            <div className="flex flex-wrap gap-4">
-              <motion.a
-                href={currentProject.link}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-md"
-              >
-                View Case Study
-              </motion.a>
-
-              <div className="flex items-center space-x-2">
-                {featuredProjects.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentIndex(index)}
-                    className={`h-3 w-3 rounded-full transition-colors ${
-                      currentIndex === index
-                        ? "bg-blue-600"
-                        : "bg-gray-300 hover:bg-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600"
-                    }`}
-                    aria-label={`Go to project ${index + 1}`}
-                  />
                 ))}
               </div>
             </div>

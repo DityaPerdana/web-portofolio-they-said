@@ -27,14 +27,6 @@ const Navigation = () => {
       name: "Services",
       link: "/services",
     },
-    // {
-    //   name: "Contact",
-    //   link: "#contact",
-    // },
-    // {
-    //   name: "Blog",
-    //   link: "#blog",
-    // },
     {
       name: "Projects",
       link: "/project",
@@ -42,27 +34,23 @@ const Navigation = () => {
   ];
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // State management for theme (shared across desktop and mobile)
   const handleToggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
-    <div className="relative w-full z-[100]">
+    <header id="navbar" className="relative w-full z-[100]">
       <Navbar>
-        {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            {/* Explicit z-index to ensure the button is clickable */}
             <div className="relative z-10">
               <ThemeToggle />
             </div>
             <NavbarButton variant="primary">Get in Touch</NavbarButton>
           </div>
         </NavBody>
-        {/* Mobile Navigation */}
         <MobileNav>
           <MobileNavHeader>
             <NavbarLogo />
@@ -98,7 +86,7 @@ const Navigation = () => {
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
-    </div>
+    </header>
   );
 };
 
