@@ -27,12 +27,15 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "./opengraph.png",
+        url: "/opengraph.png",
+        width: 1200,
+        height: 630,
       },
     ],
   },
   twitter: {
-    images: ["./opengraph.png"],
+    card: "summary_large_image",
+    images: ["/opengraph.png"],
   },
 };
 
