@@ -3,7 +3,17 @@ import { motion } from "motion/react";
 import { useState, useEffect } from "react";
 import { IconQuote, IconStar, IconStarFilled } from "@tabler/icons-react";
 
-const testimonials = [
+interface Testimonial {
+  id: number;
+  content: string;
+  author: string;
+  position: string;
+  rating: number;
+  service: string;
+  image: string;
+}
+
+const testimonials: Testimonial[] = [
   // {
   //   id: 1,
   //   content: "Working with the team was transformative for our business.",
