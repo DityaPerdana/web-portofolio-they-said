@@ -8,6 +8,7 @@ import { ServiceCTA } from "@/components/services/ServiceCTA";
 import Footer from "@/components/Footer";
 import { LoadingProvider } from "@/context/LoadingContent";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import ClientShell from "@/components/ClientShell";
 
 const geistSans = Geist({
@@ -93,6 +94,7 @@ export default function RootLayout({
               </Suspense>
 
               <Analytics />
+              <SpeedInsights />
             </LoadingProvider>
           </ThemeProvider>
         </ClientShell>

@@ -202,7 +202,7 @@ const SkeletonFour = () => {
           width="100"
           className="rounded-full h-10 w-10"
         />
-        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
+        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-700 mt-4">
           Just code in Vanilla Javascript
         </p>
         <p className="border border-red-500 bg-red-100 dark:bg-red-900/20 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
@@ -217,7 +217,7 @@ const SkeletonFour = () => {
           width="100"
           className="rounded-full h-10 w-10"
         />
-        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
+        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-700 mt-4">
           Tailwind CSS is cool, you know
         </p>
         <p className="border border-green-500 bg-green-100 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
@@ -235,7 +235,7 @@ const SkeletonFour = () => {
           width="100"
           className="rounded-full h-10 w-10"
         />
-        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
+        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-700 mt-4">
           I love angular, RSC, and Redux.
         </p>
         <p className="border border-orange-500 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
@@ -289,13 +289,13 @@ const SkeletonFive = () => {
           width="100"
           className="rounded-full h-10 w-10"
         />
-        <p className="text-xs text-neutral-500">How can I help you today?</p>
+        <p className="text-xs text-neutral-700">How can I help you today?</p>
       </motion.div>
       <motion.div
         variants={variantsSecond}
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
       >
-        <p className="text-xs text-neutral-500">I need support with my order</p>
+        <p className="text-xs text-neutral-700">I need support with my order</p>
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 shrink-0" />
       </motion.div>
     </motion.div>
@@ -386,7 +386,7 @@ const SkeletonSeven = () => {
             >
               {stat.value}
             </motion.div>
-            <div className="text-xs text-neutral-500 mt-1">{stat.label}</div>
+            <div className="text-xs text-neutral-700 mt-1">{stat.label}</div>
           </motion.div>
         ))}
       </div>
@@ -498,14 +498,13 @@ const SkeletonTen = () => {
   return (
     <div className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] p-4">
       <div className="w-full h-full flex flex-col rounded-lg overflow-hidden border border-neutral-200 dark:border-neutral-800">
-        {/* Code editor header */}
         <div className="bg-neutral-100 dark:bg-neutral-900 p-2 flex items-center justify-between">
           <div className="flex space-x-1.5">
             <div className="w-3 h-3 rounded-full bg-red-500"></div>
             <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
             <div className="w-3 h-3 rounded-full bg-green-500"></div>
           </div>
-          <div className="text-xs font-mono text-neutral-500">script.js</div>
+          <div className="text-xs font-mono text-neutral-700">script.js</div>
           <div className="w-4"></div>
         </div>
 
@@ -530,9 +529,8 @@ const SkeletonTen = () => {
           </div>
         </div>
 
-        {/* Footer with static text */}
         <div className="bg-neutral-100 dark:bg-neutral-900 p-2 flex justify-center">
-          <div className="text-xs flex items-center space-x-1 text-neutral-500">
+          <div className="text-xs flex items-center space-x-1 text-neutral-700">
             <IconCode className="h-3 w-3" />
             <span>Clean Code</span>
           </div>
@@ -636,7 +634,7 @@ const items = [
     ),
     header: <SkeletonOne />,
     className: "md:col-span-1",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-700" />,
   },
   {
     title: "Professional Content",
@@ -647,7 +645,7 @@ const items = [
     ),
     header: <SkeletonTwo />,
     className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    icon: <IconFileBroken className="h-4 w-4 text-neutral-700" />,
   },
   {
     title: "Complete Security",
@@ -658,7 +656,7 @@ const items = [
     ),
     header: <SkeletonThree />,
     className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    icon: <IconSignature className="h-4 w-4 text-neutral-700" />,
   },
   {
     title: "Passionate Development",
@@ -669,7 +667,7 @@ const items = [
     ),
     header: <SkeletonFour />,
     className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    icon: <IconTableColumn className="h-4 w-4 text-neutral-700" />,
   },
   {
     title: "Customer Support",
@@ -678,7 +676,7 @@ const items = [
     ),
     header: <SkeletonFive />,
     className: "md:col-span-1",
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-700" />,
   },
   {
     title: "Key Features",
@@ -687,7 +685,7 @@ const items = [
     ),
     header: <SkeletonSix />,
     className: "md:col-span-1",
-    icon: <IconRocket className="h-4 w-4 text-neutral-500" />,
+    icon: <IconRocket className="h-4 w-4 text-neutral-700" />,
   },
   {
     title: "Growing Community",
@@ -698,7 +696,7 @@ const items = [
     ),
     header: <SkeletonSeven />,
     className: "md:col-span-1",
-    icon: <IconChartBar className="h-4 w-4 text-neutral-500" />,
+    icon: <IconChartBar className="h-4 w-4 text-neutral-700" />,
   },
   {
     title: "Track Progress",
@@ -709,7 +707,7 @@ const items = [
     ),
     header: <SkeletonEight />,
     className: "md:col-span-1",
-    icon: <IconPalette className="h-4 w-4 text-neutral-500" />,
+    icon: <IconPalette className="h-4 w-4 text-neutral-700" />,
   },
   {
     title: "Innovative Solutions",
@@ -720,7 +718,7 @@ const items = [
     ),
     header: <SkeletonNine />,
     className: "md:col-span-1",
-    icon: <IconShield className="h-4 w-4 text-neutral-500" />,
+    icon: <IconShield className="h-4 w-4 text-neutral-700" />,
   },
   {
     title: "Code Excellence",
@@ -731,7 +729,7 @@ const items = [
     ),
     header: <SkeletonTen />,
     className: "md:col-span-1",
-    icon: <IconCode className="h-4 w-4 text-neutral-500" />,
+    icon: <IconCode className="h-4 w-4 text-neutral-700" />,
   },
   {
     title: "Multi-Device Support",
@@ -742,6 +740,6 @@ const items = [
     ),
     header: <SkeletonEleven />,
     className: "md:col-span-1",
-    icon: <IconDeviceLaptop className="h-4 w-4 text-neutral-500" />,
+    icon: <IconDeviceLaptop className="h-4 w-4 text-neutral-700" />,
   },
 ];
