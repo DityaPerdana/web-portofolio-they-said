@@ -22,7 +22,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "NyctOwl Studio",
-  description: "",
+  description:
+    "NyctOwl Studio offers professional web design, development, and creative digital solutions. We transform your ideas into elegant, functional websites and applications with precision and expertise.",
   openGraph: {
     images: [
       {
