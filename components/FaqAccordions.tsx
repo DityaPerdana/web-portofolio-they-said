@@ -18,12 +18,6 @@ const faqItems: FaqItem[] = [
     category: "Services",
   },
   {
-    question: "How long does a typical web development project take?",
-    answer:
-      "Project timelines vary based on complexity and scope. A simple website might take 4-6 weeks, while more complex web applications can take 3-6 months. During our initial consultation, we'll provide a detailed timeline based on your specific requirements.",
-    category: "Process",
-  },
-  {
     question: "What is your design process like?",
     answer:
       "Our design process begins with discovery to understand your goals, brand, and users. We then create wireframes and mockups for your feedback. After refinements, we develop interactive prototypes before moving to full implementation. We prioritize collaboration throughout to ensure the final product aligns with your vision.",
