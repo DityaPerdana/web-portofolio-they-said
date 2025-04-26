@@ -3,8 +3,9 @@ import { TeamSection } from "@/components/about/TeamSection";
 import { ValuesSection } from "@/components/about/ValuesSection";
 import { AboutHero } from "@/components/about/AboutHero";
 import { Metadata } from "next";
+import { Suspense } from "react";
 
-const metadata: Metadata = {
+export const metadata: Metadata = {
   title: "About Us | NyctOwl Studio",
   description: "Learn more about our mission, team, and values.",
 };
@@ -12,10 +13,45 @@ const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-white dark:bg-black">
-      <AboutHero />
-      <MissionSection />
-      <TeamSection />
-      <ValuesSection />
+      <Suspense
+        fallback={
+          <div className="h-screen flex items-center justify-center">
+            Loading hero...
+          </div>
+        }
+      >
+        <AboutHero />
+      </Suspense>
+
+      <Suspense
+        fallback={
+          <div className="py-20 flex items-center justify-center">
+            Loading mission...
+          </div>
+        }
+      >
+        <MissionSection />
+      </Suspense>
+
+      <Suspense
+        fallback={
+          <div className="py-20 flex items-center justify-center">
+            Loading team...
+          </div>
+        }
+      >
+        <TeamSection />
+      </Suspense>
+
+      <Suspense
+        fallback={
+          <div className="py-20 flex items-center justify-center">
+            Loading values...
+          </div>
+        }
+      >
+        <ValuesSection />
+      </Suspense>
     </main>
   );
 }
