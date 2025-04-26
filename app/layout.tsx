@@ -21,9 +21,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nyctowl.studio"),
   title: "NyctOwl Studio",
-  description: "...",
+  description: "",
   openGraph: {
     images: [
       {
