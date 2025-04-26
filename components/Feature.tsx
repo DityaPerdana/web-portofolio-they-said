@@ -17,6 +17,7 @@ import {
   IconBrandAndroid,
 } from "@tabler/icons-react";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 export function Feature() {
   return (
@@ -282,7 +283,7 @@ const SkeletonFive = () => {
         variants={variants}
         className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
       >
-        <img
+        <Image
           src="https://i.ppy.sh/867617a4e64b070fc4ccff60251842f0b526f6d1/68747470733a2f2f692e6962622e636f2f5979435859624a2f4b6c65652e6a7067"
           alt="avatar"
           height="100"

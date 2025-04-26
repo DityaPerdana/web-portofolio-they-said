@@ -7,6 +7,7 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "motion/react";
+import Image from "next/image";
 
 import React, { useRef, useState } from "react";
 
@@ -236,15 +237,14 @@ export const NavbarLogo = () => {
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
       <div className="relative h-16 w-16 flex-shrink-0">
-        {/* Dark mode logo - only visible in dark mode */}
-        <img
+        <Image
           src="/whitelogonobg.png"
           alt="logo"
           width={65}
           height={65}
           className="absolute top-0 left-0 hidden dark:block"
         />
-        <img
+        <Image
           src="/logonobg.png"
           alt="logo"
           width={65}

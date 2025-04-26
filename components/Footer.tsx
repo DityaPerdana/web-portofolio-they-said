@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Twitter, Disc, Github, Instagram, Linkedin } from "lucide-react";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -25,14 +26,18 @@ const Footer = () => {
             >
               <div className="flex items-center mb-6">
                 <div className="mr-3 relative h-12 w-12 flex-shrink-0">
-                  <img
+                  <Image
                     src="/whitelogonobg.png"
                     alt="NyctOwl Studio Logo"
+                    width={48}
+                    height={48}
                     className="absolute inset-0 h-full w-full object-contain hidden dark:block"
                   />
-                  <img
+                  <Image
                     src="/logonobg.png"
                     alt="NyctOwl Studio Logo"
+                    width={48}
+                    height={48}
                     className="absolute inset-0 h-full w-full object-contain block dark:hidden"
                   />
                 </div>
