@@ -43,16 +43,34 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider>
           <LoadingProvider>
-            <Suspense>
+            <Suspense
+              fallback={<div className="h-20 bg-white dark:bg-black"></div>}
+            >
               <Navigation />
-              {children}
+            </Suspense>
+
+            {children}
+
+            <Suspense
+              fallback={
+                <div className="py-12 bg-gradient-to-r from-blue-600 to-purple-600"></div>
+              }
+            >
               <ServiceCTA />
+            </Suspense>
+
+            <Suspense
+              fallback={
+                <div className="py-24 bg-gradient-to-b from-white to-gray-50 dark:from-black dark:to-gray-900/70"></div>
+              }
+            >
               <Footer />
             </Suspense>
+
             <SpeedInsights />
           </LoadingProvider>
         </ThemeProvider>
