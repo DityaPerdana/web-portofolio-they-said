@@ -18,7 +18,7 @@ const featuredProjects: FeaturedProject[] = [
     id: 1,
     title: "NyctOwl Nimbus",
     client: "Personal project by Raditya Alfarisi",
-    description: "online code editor with communication features.",
+    description: "online code editor with community features.",
     technologies: ["Next.js", "TailwindCSS", "Convex", "Clerk"],
     imageUrl: "project/nimbusCommunity.webp",
     link: "https://nyctowl-nimbus.vercel.app/",

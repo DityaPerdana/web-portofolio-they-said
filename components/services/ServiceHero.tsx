@@ -4,7 +4,6 @@ import { motion } from "motion/react";
 export function ServiceHero() {
   return (
     <div className="relative w-full overflow-hidden bg-gradient-to-b from-purple-50 to-white py-24 dark:from-purple-950/20 dark:to-black">
-      {/* Background decorative elements */}
       <div className="absolute left-0 top-1/4 h-64 w-64 -translate-x-1/3 rounded-full bg-blue-200 opacity-20 blur-3xl filter dark:bg-blue-700"></div>
       <div className="absolute right-0 bottom-1/4 h-64 w-64 translate-x-1/3 rounded-full bg-purple-200 opacity-20 blur-3xl filter dark:bg-purple-700"></div>
 
@@ -29,20 +28,22 @@ export function ServiceHero() {
               businesses thrive.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <motion.button
+              <motion.a
+                href="#allService"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
                 className="rounded-lg bg-blue-600 px-6 py-3 font-medium text-white shadow-lg transition-colors hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700"
               >
                 View All Services
-              </motion.button>
-              <motion.button
+              </motion.a>
+              <motion.a
+                href="https://wa.me/6283869916635?text=Hello,%20I%20need%20a%20technology%20solution%20for%20my%20needs"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
                 className="rounded-lg border border-gray-300 bg-white px-6 py-3 font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-black dark:text-gray-300 dark:hover:bg-gray-900"
               >
                 Schedule Consultation
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
 

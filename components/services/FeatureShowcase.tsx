@@ -95,38 +95,6 @@ export function FeatureShowcase3D() {
             <Card3D key={i} feature={feature} index={i} />
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          viewport={{ once: true }}
-          className="mt-16 text-center"
-        >
-          <motion.a
-            href="/services"
-            className="inline-flex items-center rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-4 font-medium text-white shadow-lg transition-all hover:shadow-blue-500/25 dark:shadow-lg dark:hover:shadow-purple-500/25"
-            whileHover={{
-              scale: 1.05,
-              boxShadow: "0 10px 40px -15px rgba(79, 70, 229, 0.4)",
-            }}
-            whileTap={{ scale: 0.98 }}
-          >
-            Explore All Features
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 ml-2"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </motion.a>
-        </motion.div>
       </div>
     </section>
   );
@@ -235,36 +203,6 @@ function Card3D({ feature, index }: { feature: Feature; index: number }) {
             <p className="text-gray-600 dark:text-gray-300">
               {feature.description}
             </p>
-
-            <div
-              className={cn(
-                "mt-auto pt-4",
-                isHovered ? "opacity-100" : "opacity-0",
-                "transition-opacity duration-300",
-              )}
-            >
-              <motion.a
-                href={`/services#${feature.title.toLowerCase().replace(/\s+/g, "-")}`}
-                className={cn(
-                  "inline-flex items-center font-medium",
-                  feature.color,
-                )}
-                whileHover={{ x: 5 }}
-              >
-                Learn more
-                <svg
-                  className="ml-2 h-4 w-4"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </motion.a>
-            </div>
           </div>
         </div>
       </motion.div>

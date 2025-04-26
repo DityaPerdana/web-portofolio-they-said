@@ -44,20 +44,21 @@ const Navigation = () => {
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
-          <div className="flex items-center gap-4">
-            <div className="relative z-10">
-              <ThemeToggle />
-            </div>
+          <div className="flex items-center gap-4 z-50">
+            <ThemeToggle />
             <NavbarButton variant="primary">Get in Touch</NavbarButton>
           </div>
         </NavBody>
         <MobileNav>
           <MobileNavHeader>
             <NavbarLogo />
-            <MobileNavToggle
-              isOpen={isMobileMenuOpen}
-              onClick={handleToggleMobileMenu}
-            />
+            <div className="flex items-center gap-4">
+              <ThemeToggle />
+              <MobileNavToggle
+                isOpen={isMobileMenuOpen}
+                onClick={handleToggleMobileMenu}
+              />
+            </div>
           </MobileNavHeader>
           <MobileNavMenu
             isOpen={isMobileMenuOpen}
@@ -74,7 +75,6 @@ const Navigation = () => {
               </a>
             ))}
             <div className="flex w-full flex-col gap-4">
-              <ThemeToggle />
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"

@@ -14,7 +14,7 @@ export function ProjectStats() {
 
   const stats = [
     {
-      value: "150+",
+      value: "1+",
       label: "Projects Completed",
       description: "Across various industries and technologies",
       icon: (
@@ -31,7 +31,7 @@ export function ProjectStats() {
       bgColor: "bg-blue-100 dark:bg-blue-900/30",
     },
     {
-      value: "96%",
+      value: "0%",
       label: "Client Satisfaction",
       description: "Based on post-project client surveys",
       icon: (
@@ -48,7 +48,7 @@ export function ProjectStats() {
       bgColor: "bg-yellow-100 dark:bg-yellow-900/30",
     },
     {
-      value: "12",
+      value: "Not yet.",
       label: "Industry Awards",
       description: "Recognizing excellence in digital design",
       icon: (
@@ -65,7 +65,7 @@ export function ProjectStats() {
       bgColor: "bg-purple-100 dark:bg-purple-900/30",
     },
     {
-      value: "40%",
+      value: "0%",
       label: "Avg. Performance Boost",
       description: "Improvement in client metrics after launch",
       icon: (

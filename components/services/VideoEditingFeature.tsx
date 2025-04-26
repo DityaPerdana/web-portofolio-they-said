@@ -177,13 +177,14 @@ export function VideoEditingFeature() {
             </div>
 
             <div className="pt-4">
-              <motion.button
+              <motion.a
                 whileHover={{ scale: 1.05 }}
+                href="/project"
                 whileTap={{ scale: 0.95 }}
                 className="rounded-lg bg-pink-600 px-6 py-3 font-medium text-white shadow-lg transition-colors hover:bg-pink-700 dark:bg-pink-700 dark:hover:bg-pink-600"
               >
                 Explore Our Video Portfolio
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
         </div>

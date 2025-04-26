@@ -91,7 +91,6 @@ export function ITSolutionsFeature() {
         </motion.div>
 
         <div className="flex flex-col space-y-10 lg:flex-row lg:space-y-0 lg:space-x-10">
-          {/* Left side - Solution selector */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -131,7 +130,6 @@ export function ITSolutionsFeature() {
             </div>
           </motion.div>
 
-          {/* Right side - Solution details */}
           <motion.div
             key={activeSolution}
             initial={{ opacity: 0, x: 20 }}
@@ -188,21 +186,10 @@ export function ITSolutionsFeature() {
                   ))}
                 </ul>
               </div>
-
-              <div className="flex justify-center">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className={`rounded-lg bg-${currentSolution.color}-600 px-6 py-3 font-medium text-white shadow-lg transition-colors hover:bg-${currentSolution.color}-700`}
-                >
-                  Learn More About {currentSolution.title}
-                </motion.button>
-              </div>
             </div>
           </motion.div>
         </div>
 
-        {/* Benefits section */}
         <div className="mt-24 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {[
             {

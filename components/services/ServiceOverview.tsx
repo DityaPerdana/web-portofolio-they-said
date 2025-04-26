@@ -5,7 +5,6 @@ import {
   IconDeviceDesktop,
   IconDeviceMobile,
   IconBrush,
-  IconChartBar,
   IconDatabase,
   IconCloudComputing,
   IconSeo,
@@ -59,10 +58,10 @@ export function ServiceOverview() {
     },
     {
       id: "digital-marketing",
-      title: "Digital Marketing",
+      title: "Desktop Development",
       description:
-        "Data-driven strategies to grow your audience and drive conversions.",
-      icon: <IconChartBar className="h-8 w-8" />,
+        "Custom desktop applications tailored to your business needs, ensuring performance and reliability.",
+      icon: <IconDeviceDesktop className="h-8 w-8" />,
       color: "orange",
     },
     {
@@ -116,7 +115,7 @@ export function ServiceOverview() {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
 
   return (
-    <section className="py-24">
+    <section className="py-24" id="allService">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

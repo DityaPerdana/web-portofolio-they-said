@@ -54,14 +54,14 @@ const Footer = () => {
 
               <div className="flex flex-wrap gap-3 mb-6">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/nyctowlstudio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   aria-label="Instagram"
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-colors hover:bg-pink-600 hover:text-white dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-pink-600 dark:hover:text-white"
                 >
                   <Instagram size={18} />
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/NyctOwl-Studio"
                   aria-label="GitHub"
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-colors hover:bg-gray-900 hover:text-white dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-900 dark:hover:text-white"
                 >

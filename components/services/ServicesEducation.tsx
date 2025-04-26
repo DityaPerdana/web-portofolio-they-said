@@ -9,6 +9,7 @@ import {
   IconBrandJavascript,
   IconBrandReact,
   IconBrandTypescript,
+  IconBrandPython,
 } from "@tabler/icons-react";
 
 interface EducationalResource {
@@ -30,25 +31,21 @@ export function ServicesEducation() {
 
   const educationalResources: EducationalResource[] = [
     {
-      id: "html-cheatsheet",
-      title: "HTML Cheat Sheet",
+      id: "js-ts-fundamentals",
+      title: "HTML + CSS",
       description:
-        "A comprehensive reference guide for HTML tags, attributes, and best practices for modern web development.",
-      fileUrl: "/resources/HTMLCheatSheet.pdf",
-      icon: <IconBrandHtml5 className="h-6 w-6" />,
-      color: "orange",
-      fileSize: "1.2 MB",
-      fileType: "PDF",
-    },
-    {
-      id: "css-guidelines",
-      title: "CSS Style Guide",
-      description:
-        "Best practices for writing maintainable CSS with examples of common patterns and responsive design techniques.",
-      fileUrl: "/resources/CSSStyleGuide.pdf",
-      icon: <IconBrandCss3 className="h-6 w-6" />,
-      color: "blue",
-      fileSize: "0.9 MB",
+        "HTML and CSS are the foundational technologies for building web pages. This resource covers the basics of structuring content with HTML and styling it with CSS, providing a solid starting point for web development..",
+      fileUrl: "/resources/JavaScriptFundamentals.pdf",
+      icon: "HTML + CSS",
+      customIcon: (
+        <div className="flex items-center">
+          <IconBrandHtml5 className="h-6 w-6 text-orange-500" />
+          <span className="mx-0.5">+</span>
+          <IconBrandCss3 className="h-6 w-6 text-sky-500" />
+        </div>
+      ),
+      color: "js-ts-gradient",
+      fileSize: "1.5 MB",
       fileType: "PDF",
       isComingSoon: true,
     },
@@ -58,11 +55,12 @@ export function ServicesEducation() {
       description:
         "Core concepts of JavaScript and TypeScript explained clearly with practical examples for beginners and intermediate developers.",
       fileUrl: "/resources/JavaScriptFundamentals.pdf",
+      icon: "TypeScript",
       customIcon: (
         <div className="flex items-center">
-          <IconBrandJavascript className="h-6 w-6 text-yellow-500" />
+          <IconBrandHtml5 className="h-6 w-6 text-orange-500" />
           <span className="mx-0.5">+</span>
-          <IconBrandTypescript className="h-6 w-6 text-blue-500" />
+          <IconBrandCss3 className="h-6 w-6 text-sky-500" />
         </div>
       ),
       color: "js-ts-gradient",
@@ -80,6 +78,15 @@ export function ServicesEducation() {
       color: "cyan",
       fileSize: "1.8 MB",
       fileType: "PDF",
+      isComingSoon: true,
+    },
+    {
+      id: "corvus-lms",
+      title: "Python",
+      description:
+        "Python is a versatile programming language known for its readability and simplicity. This resource covers Python fundamentals, data structures, and practical applications for web development, making it an excellent choice for both beginners and experienced developers.",
+      icon: <IconBrandPython className="h-6 w-6" />,
+      color: "yellow",
       isComingSoon: true,
     },
     {
@@ -363,13 +370,14 @@ export function ServicesEducation() {
             Our team can develop specialized learning resources tailored to your
             team's specific needs and technology stack.
           </p>
-          <motion.button
+          <motion.a
+            href="https://wa.me/6283869916635?text=Hello,%20I%20need%20a%custom%20education%20for%20my%20needs"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="rounded-lg bg-indigo-600 px-6 py-3 font-medium text-white shadow-lg transition-colors hover:bg-indigo-700"
           >
             Contact Our Education Team
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
     </section>

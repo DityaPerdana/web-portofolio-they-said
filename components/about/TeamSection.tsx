@@ -28,7 +28,7 @@ const teamMembers: TeamMember[] = [
     id: 1,
     name: "Habib Herdiansyah",
     role: "CEO",
-    bio: "Anomali ini blablablabalbalbalbalvabvablablablalbalbalb",
+    bio: "I Am A Man Who Like Know About Hardware And Full Curios About How It Work,I Am a System Desktop Developer,I Like C++,C,And Rust , My Intention Is Making High Performance Desktop App For Helping People With Their Low End Devices.My Moto Is “I Am Not Average” Because I Know God Give Me A Potential And My Job Is Reach The Peak Potential.",
     imageUrl: "/photoMember/Habib.webp",
     socialLinks: {},
   },
@@ -36,7 +36,7 @@ const teamMembers: TeamMember[] = [
     id: 2,
     name: "Ramses Corda",
     role: "CTO",
-    bio: "Murata brings artistry to technology, leading our design team with an eye for detail and a passion for user experience that transforms digital interfaces into immersive journeys.",
+    bio: "fuck, hell yea, im a cable.",
     imageUrl: "/photoMember/RamsesCorda.webp",
     socialLinks: {},
   },
@@ -44,7 +44,7 @@ const teamMembers: TeamMember[] = [
     id: 3,
     name: "Muhammad Abdullah Azzam",
     role: "CFO",
-    bio: "With a knack for solving complex problems, Jordan oversees our technical strategy and ensures our solutions are robust, scalable, and built with cutting-edge technologies.",
+    bio: "My plan always success, with my mind gifted by god.",
     imageUrl: "/photoMember/Azzam.webp",
     socialLinks: {},
   },
@@ -52,7 +52,7 @@ const teamMembers: TeamMember[] = [
     id: 4,
     name: "Athar Delano Shaby",
     role: "Artist",
-    bio: "IM an artist",
+    bio: "I can do it because god can too",
     imageUrl: "/photoMember/AtharDelano.webp",
     socialLinks: {},
   },
@@ -60,7 +60,7 @@ const teamMembers: TeamMember[] = [
     id: 5,
     name: "Abdurrahman Yasir",
     role: "Editor, Artist",
-    bio: "Casey ensures every client interaction exceeds expectations. With a background in psychology and technology, they create partnerships that lead to long-term success.",
+    bio: "hasn't limit like my imagination.",
     imageUrl: "/photoMember/Yasir.webp",
     socialLinks: {},
   },
@@ -68,24 +68,32 @@ const teamMembers: TeamMember[] = [
     id: 6,
     name: "Vharel",
     role: "Business Director",
-    bio: "Avery bridges the gap between users and technology, using data-driven insights to shape intuitive digital experiences that resonate with people's real needs.",
+    bio: "We work with capability🤝.",
     imageUrl: "/photoMember/Vharel.webp",
     socialLinks: {},
   },
   {
     id: 7,
-    name: "Muhammad Farhan",
+    name: "Fatir Adzan Setia",
     role: "Mobile Developer",
-    bio: "Avery bridges the gap between users and technology, using data-driven insights to shape intuitive digital experiences that resonate with people's real needs.",
-    imageUrl: "/photoMember/Farhan.webp",
+    bio: "If other people can, then I should be able to too.",
+    imageUrl: "/photoMember/Fatir.webp",
     socialLinks: {},
   },
   {
     id: 8,
-    name: "Fatir Adzan Setia",
+    name: "Muhammad Farhan",
     role: "Mobile Developer",
-    bio: "Avery bridges the gap between users and technology, using data-driven insights to shape intuitive digital experiences that resonate with people's real needs.",
-    imageUrl: "/photoMember/Fatir.webp",
+    bio: "Seorang anak yang suka mengambil keuntungan dari pengalaman orang lain.",
+    imageUrl: "/photoMember/Farhan.webp",
+    socialLinks: {},
+  },
+  {
+    id: 9,
+    name: "Raditya Alfarisi",
+    role: "Fullstack Developer",
+    bio: "I don’t idolize the past — I build for the future. While some chase microseconds and write code only machines can love, I craft systems that scale, collaborate, and evolve. I believe good code is not just fast, but readable, testable, and human-centered. My tools may be abstracted, but my vision is clear: real-world impact, modern tech, and empowering others through clean, accessible development. I don’t need to prove performance in benchmarks — I prove it in products that people actually use.",
+    imageUrl: "/photoMember/raditya.webp",
     socialLinks: {},
   },
 ];
@@ -139,7 +147,6 @@ export function TeamSection() {
                 />
               </div>
 
-              {/* Overlay content */}
               <div
                 className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/80 to-transparent p-6 text-white transition-opacity duration-300"
                 style={{
@@ -195,7 +202,6 @@ export function TeamSection() {
                 </div>
               </div>
 
-              {/* Default content */}
               <div
                 className="p-6 dark:bg-gray-800 transition-all duration-200"
                 style={{

@@ -1,7 +1,5 @@
 module.exports = {
-  // ...other config
   safelist: [
-    // Previous safelist entries...
     "bg-blue-100",
     "bg-blue-500",
     "bg-blue-600",
@@ -49,7 +47,6 @@ module.exports = {
     "bg-amber-900/30",
     "bg-yellow-500",
 
-    // Text colors
     "text-blue-600",
     "text-blue-400",
     "text-blue-800",
@@ -87,7 +84,6 @@ module.exports = {
     "text-amber-800",
     "text-amber-300",
 
-    // Border colors
     "border-blue-500",
     "border-green-500",
     "border-purple-500",
@@ -97,7 +93,6 @@ module.exports = {
     "border-emerald-500",
     "border-sky-500",
     "border-amber-500",
-    // New colors for video editing and IT solutions
     "bg-pink-100",
     "bg-pink-500",
     "bg-pink-600",
@@ -137,4 +132,41 @@ module.exports = {
     "text-slate-300",
     "border-slate-500",
   ],
+
+  theme: {
+    extend: {
+      keyframes: {
+        glitch: {
+          "0%": { "clip-path": "inset(20% 0 50% 0)" },
+          "5%": { "clip-path": "inset(10% 0 60% 0)" },
+          "10%": { "clip-path": "inset(15% 0 55% 0)" },
+          "15%": { "clip-path": "inset(25% 0 35% 0)" },
+          "20%": { "clip-path": "inset(30% 0 40% 0)" },
+          "25%": { "clip-path": "inset(40% 0 20% 0)" },
+          "30%": { "clip-path": "inset(10% 0 60% 0)" },
+          "35%": { "clip-path": "inset(15% 0 55% 0)" },
+          "40%": { "clip-path": "inset(25% 0 35% 0)" },
+          "45%": { "clip-path": "inset(30% 0 40% 0)" },
+          "50%": { "clip-path": "inset(20% 0 50% 0)" },
+          "55%": { "clip-path": "inset(10% 0 60% 0)" },
+          "60%": { "clip-path": "inset(15% 0 55% 0)" },
+          "65%": { "clip-path": "inset(25% 0 35% 0)" },
+          "70%": { "clip-path": "inset(30% 0 40% 0)" },
+          "75%": { "clip-path": "inset(40% 0 20% 0)" },
+          "80%": { "clip-path": "inset(20% 0 50% 0)" },
+          "85%": { "clip-path": "inset(10% 0 60% 0)" },
+          "90%": { "clip-path": "inset(15% 0 55% 0)" },
+          "95%": { "clip-path": "inset(25% 0 35% 0)" },
+          "100%": { "clip-path": "inset(30% 0 40% 0)" },
+        },
+      },
+      animation: {
+        "glitch-after":
+          "glitch var(--after-duration) infinite linear alternate-reverse",
+        "glitch-before":
+          "glitch var(--before-duration) infinite linear alternate-reverse",
+      },
+    },
+  },
+  plugins: [],
 };

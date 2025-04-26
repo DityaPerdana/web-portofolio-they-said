@@ -10,7 +10,7 @@ import { ServicesEducation } from "@/components/services/ServicesEducation";
 import { FeatureShowcase3D } from "@/components/services/FeatureShowcase";
 
 export const metadata: Metadata = {
-  title: "Our Services | Burung Hantu Digital Agency",
+  title: "Our Services | NyctOwl Studio",
   description:
     "Explore our comprehensive range of digital services designed to transform your online presence and drive results.",
 };
