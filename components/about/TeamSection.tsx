@@ -74,7 +74,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     id: 7,
-    name: "Fatir Adzan Setia",
+    name: "Fatir Adzan Satia",
     role: "Mobile Developer",
     bio: "If other people can, then I should be able to too.",
     imageUrl: "/photoMember/Fatir.webp",
