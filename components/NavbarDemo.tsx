@@ -46,7 +46,12 @@ const Navigation = () => {
           <NavItems items={navItems} />
           <div className="flex items-center gap-4 z-50">
             <ThemeToggle />
-            <NavbarButton variant="primary">Get in Touch</NavbarButton>
+            <NavbarButton
+              href="https://wa.me/6283869916634?text=Hello,%20I%20need%20a%20technology%20solution%20for%20my%20needs"
+              variant="primary"
+            >
+              Get in Touch
+            </NavbarButton>
           </div>
         </NavBody>
         <MobileNav>

@@ -244,7 +244,6 @@ export const NavbarLogo = () => {
           height={65}
           className="absolute top-0 left-0 hidden dark:block"
         />
-        {/* Light mode logo - hidden in dark mode */}
         <img
           src="/logonobg.png"
           alt="logo"
