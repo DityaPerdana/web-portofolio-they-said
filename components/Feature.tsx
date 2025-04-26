@@ -359,7 +359,7 @@ const SkeletonSix = () => {
 };
 
 const SkeletonSeven = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const stats = [
     { label: "Users", value: "10K+", color: "from-blue-400 to-blue-600" },
     { label: "Downloads", value: "25K+", color: "from-pink-400 to-pink-600" },
