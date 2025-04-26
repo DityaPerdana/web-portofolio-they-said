@@ -7,6 +7,7 @@ import { Suspense } from "react";
 import { ServiceCTA } from "@/components/services/ServiceCTA";
 import Footer from "@/components/Footer";
 import { LoadingProvider } from "@/context/LoadingContent";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -52,6 +53,7 @@ export default function RootLayout({
               <ServiceCTA />
               <Footer />
             </Suspense>
+            <SpeedInsights />
           </LoadingProvider>
         </ThemeProvider>
       </body>
