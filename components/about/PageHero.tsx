@@ -10,7 +10,6 @@ interface PageHeroProps {
 export function PageHero({ title, subtitle }: PageHeroProps) {
   return (
     <div className="relative w-full overflow-hidden bg-gradient-to-b from-blue-50 to-white py-20 dark:from-blue-950/20 dark:to-black">
-      {/* Decorative elements */}
       <div className="absolute left-0 top-0 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-200 opacity-20 blur-3xl filter dark:bg-blue-900"></div>
       <div className="absolute right-0 top-1/4 h-64 w-64 translate-x-1/3 rounded-full bg-purple-200 opacity-20 blur-3xl filter dark:bg-purple-900"></div>
 
