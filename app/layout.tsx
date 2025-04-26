@@ -24,18 +24,34 @@ export const metadata: Metadata = {
   title: "NyctOwl Studio",
   description:
     "NyctOwl Studio offers professional web design, development, and creative digital solutions. We transform your ideas into elegant, functional websites and applications with precision and expertise.",
+  metadataBase: new URL("https://nyctowl.vercel.app"),
   openGraph: {
+    title: "NyctOwl Studio - Web Design & Development Solutions",
+    description:
+      "Professional web design, development, and creative digital solutions by NyctOwl Studio.",
+    url: "https://nyctowl.vercel.app",
+    siteName: "NyctOwl Studio",
     images: [
       {
         url: "/opengraph.png",
         width: 1200,
         height: 630,
+        alt: "NyctOwl Studio - From Pixels to Impact",
       },
     ],
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
+    title: "NyctOwl Studio - Web Design & Development",
+    description: "Professional web design and development services",
     images: ["/opengraph.png"],
+    creator: "@nyctowlstudio",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
