@@ -2,6 +2,7 @@
 import React from "react";
 import { HeroParallax } from "../ui/hero-parallax";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 export function ProjectHeroDesktop() {
   return (
@@ -113,7 +114,9 @@ export function ProjectHeroDesktop() {
                 </div>
 
                 <div className="absolute -bottom-10 -left-10 z-0 rounded-2xl overflow-hidden shadow-2xl w-3/4 h-3/4 transform -rotate-6 opacity-70">
-                  <img
+                  <Image
+                    width={1920}
+                    height={1080}
                     src="/project/visionScreenshot.webp"
                     alt="Project Preview"
                     className="w-full h-full object-cover"

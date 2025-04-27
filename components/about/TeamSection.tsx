@@ -8,6 +8,7 @@ import {
   IconBrandGithub,
   IconMail,
 } from "@tabler/icons-react";
+import Image from "next/image";
 
 type TeamMember = {
   id: number;
@@ -136,7 +137,9 @@ export function TeamSection() {
               onMouseLeave={() => setActiveId(null)}
             >
               <div className="aspect-[3/4] overflow-hidden">
-                <img
+                <Image
+                  width={1024}
+                  height={1024}
                   src={member.imageUrl}
                   alt={member.name}
                   className="h-full w-full object-cover transition-transform duration-500"

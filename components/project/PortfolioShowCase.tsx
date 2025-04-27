@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface Project {
   id: string;
@@ -175,7 +176,9 @@ export function PortfolioShowcase() {
                 onClick={(e) => e.stopPropagation()}
               >
                 <div className="relative aspect-video">
-                  <img
+                  <Image
+                    width={1920}
+                    height={1080}
                     src={selectedProject.image}
                     alt={selectedProject.title}
                     className="w-full h-full object-cover"

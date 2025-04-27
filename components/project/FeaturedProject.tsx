@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "motion/react";
+import Image from "next/image";
 import { useState } from "react";
 
 interface FeaturedProject {
@@ -20,7 +21,7 @@ const featuredProjects: FeaturedProject[] = [
     client: "Personal project by Raditya Alfarisi",
     description: "online code editor with community features.",
     technologies: ["Next.js", "TailwindCSS", "Convex", "Clerk"],
-    imageUrl: "project/nimbusCommunity.webp",
+    imageUrl: "/project/nimbusCommunity.webp",
     link: "https://nyctowl-nimbus.vercel.app/",
     highlights: [
       "Implemented advanced search with filters",
@@ -65,7 +66,9 @@ export function FeaturedProject() {
             className="lg:w-1/2"
           >
             <div className="relative rounded-xl overflow-hidden shadow-2xl">
-              <img
+              <Image
+                width={1920}
+                height={1080}
                 src={currentProject.imageUrl}
                 alt={currentProject.title}
                 className="w-full object-cover aspect-[4/3]"

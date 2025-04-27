@@ -203,7 +203,7 @@ const SkeletonFour = () => {
           width="100"
           className="rounded-full h-10 w-10"
         />
-        <p className="sm:text-sm text-xs text-center font-semibold dark:text-neutral-900 mt-4">
+        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-900 mt-4 dark:text-white">
           Just code in Vanilla Javascript
         </p>
         <p className="border border-red-500 bg-red-100 dark:bg-red-900/20 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
@@ -218,7 +218,7 @@ const SkeletonFour = () => {
           width="100"
           className="rounded-full h-10 w-10"
         />
-        <p className="sm:text-sm text-xs text-center font-semibold dark:text-neutral-900 mt-4">
+        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-900 mt-4 dark:text-white">
           Tailwind CSS is cool, you know
         </p>
         <p className="border border-green-500 bg-green-100 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
@@ -236,7 +236,7 @@ const SkeletonFour = () => {
           width="100"
           className="rounded-full h-10 w-10"
         />
-        <p className="sm:text-sm text-xs text-center font-semibold dark:text-neutral-900 mt-4">
+        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-900 mt-4 dark:text-white">
           I love angular, RSC, and Redux.
         </p>
         <p className="border border-orange-500 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
@@ -290,7 +290,7 @@ const SkeletonFive = () => {
           width="100"
           className="rounded-full h-10 w-10"
         />
-        <p className="text-xs dark:text-neutral-900">
+        <p className="text-xs text-neutral-900 dark:text-white">
           How can I help you today?
         </p>
       </motion.div>
@@ -298,7 +298,7 @@ const SkeletonFive = () => {
         variants={variantsSecond}
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
       >
-        <p className="text-xs dark:text-neutral-900">
+        <p className="text-xs text-neutral-900 dark:text-white">
           I need support with my order
         </p>
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 shrink-0" />
@@ -390,7 +390,7 @@ const SkeletonSeven = () => {
             >
               {stat.value}
             </motion.div>
-            <div className="text-xs dark:text-neutral-900 mt-1">
+            <div className="text-xs text-neutral-900 mt-1 dark:text-white">
               {stat.label}
             </div>
           </motion.div>
@@ -510,7 +510,7 @@ const SkeletonTen = () => {
             <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
             <div className="w-3 h-3 rounded-full bg-green-500"></div>
           </div>
-          <div className="text-xs font-mono dark:text-neutral-900">
+          <div className="text-xs font-mono text-neutral-900 dark:text-white">
             script.js
           </div>
           <div className="w-4"></div>
@@ -538,7 +538,7 @@ const SkeletonTen = () => {
         </div>
 
         <div className="bg-neutral-100 dark:bg-neutral-900 p-2 flex justify-center">
-          <div className="text-xs flex items-center space-x-1 dark:text-neutral-900">
+          <div className="text-xs flex items-center space-x-1 text-neutral-900 dark:text-white">
             <IconCode className="h-3 w-3" />
             <span>Clean Code</span>
           </div>
@@ -642,7 +642,9 @@ const items = [
     ),
     header: <SkeletonOne />,
     className: "md:col-span-1",
-    icon: <IconClipboardCopy className="h-4 w-4 dark:text-neutral-900" />,
+    icon: (
+      <IconClipboardCopy className="h-4 w-4 text-neutral-900 dark:text-white" />
+    ),
   },
   {
     title: "Professional Content",
@@ -653,7 +655,9 @@ const items = [
     ),
     header: <SkeletonTwo />,
     className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 dark:text-neutral-900" />,
+    icon: (
+      <IconFileBroken className="h-4 w-4 text-neutral-900 dark:text-white" />
+    ),
   },
   {
     title: "Complete Security",
@@ -664,7 +668,9 @@ const items = [
     ),
     header: <SkeletonThree />,
     className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 dark:text-neutral-900" />,
+    icon: (
+      <IconSignature className="h-4 w-4 text-neutral-900 dark:text-white" />
+    ),
   },
   {
     title: "Passionate Development",
@@ -675,7 +681,9 @@ const items = [
     ),
     header: <SkeletonFour />,
     className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 dark:text-neutral-900" />,
+    icon: (
+      <IconTableColumn className="h-4 w-4 text-neutral-900 dark:text-white" />
+    ),
   },
   {
     title: "Customer Support",
@@ -684,7 +692,9 @@ const items = [
     ),
     header: <SkeletonFive />,
     className: "md:col-span-1",
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 dark:text-neutral-900" />,
+    icon: (
+      <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-900 dark:text-white" />
+    ),
   },
   {
     title: "Key Features",
@@ -693,7 +703,7 @@ const items = [
     ),
     header: <SkeletonSix />,
     className: "md:col-span-1",
-    icon: <IconRocket className="h-4 w-4 dark:text-neutral-900" />,
+    icon: <IconRocket className="h-4 w-4 text-neutral-900 dark:text-white" />,
   },
   {
     title: "Growing Community",
@@ -704,7 +714,7 @@ const items = [
     ),
     header: <SkeletonSeven />,
     className: "md:col-span-1",
-    icon: <IconChartBar className="h-4 w-4 dark:text-neutral-900" />,
+    icon: <IconChartBar className="h-4 w-4 text-neutral-900 dark:text-white" />,
   },
   {
     title: "Track Progress",
@@ -715,7 +725,7 @@ const items = [
     ),
     header: <SkeletonEight />,
     className: "md:col-span-1",
-    icon: <IconPalette className="h-4 w-4 dark:text-neutral-900" />,
+    icon: <IconPalette className="h-4 w-4 text-neutral-900 dark:text-white" />,
   },
   {
     title: "Innovative Solutions",
@@ -726,7 +736,7 @@ const items = [
     ),
     header: <SkeletonNine />,
     className: "md:col-span-1",
-    icon: <IconShield className="h-4 w-4 dark:text-neutral-900" />,
+    icon: <IconShield className="h-4 w-4 text-neutral-900 dark:text-white" />,
   },
   {
     title: "Code Excellence",
@@ -737,7 +747,7 @@ const items = [
     ),
     header: <SkeletonTen />,
     className: "md:col-span-1",
-    icon: <IconCode className="h-4 w-4 dark:text-neutral-900" />,
+    icon: <IconCode className="h-4 w-4 text-neutral-900 dark:text-white" />,
   },
   {
     title: "Multi-Device Support",
@@ -748,6 +758,8 @@ const items = [
     ),
     header: <SkeletonEleven />,
     className: "md:col-span-1",
-    icon: <IconDeviceLaptop className="h-4 w-4 dark:text-neutral-900" />,
+    icon: (
+      <IconDeviceLaptop className="h-4 w-4 text-neutral-900 dark:text-white" />
+    ),
   },
 ];
