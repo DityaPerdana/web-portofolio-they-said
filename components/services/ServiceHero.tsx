@@ -62,53 +62,63 @@ export function ServiceHero() {
                     title: "Web Development",
                     color: "bg-blue-500",
                     icon: "🌐",
+                    link: "https://wa.me/6283869916635?text=Hello%20i%20need%20web%20development%20for%20my%20business"
                   },
                   {
                     title: "Mobile Apps",
                     color: "bg-green-500",
                     icon: "📱",
+                    link: "https://wa.me/6283869916635?text=Hello%20i%20need%20mobile%20app%20development%20for%20my%20business"
                   },
                   {
                     title: "UI/UX Design",
                     color: "bg-purple-500",
                     icon: "🎨",
+                    link: "https://wa.me/6283869916635?text=Hello%20i%20need%20UI%20%UX20development%20for%20my%20business"
                   },
                   {
                     title: "Video Editing",
                     color: "bg-pink-500",
                     icon: "🎬",
+                    link: "https://wa.me/6283869916635?text=Hello%20i%20need%20video%20editing%20for%20my%20business"
                   },
                   {
                     title: "IT Infrastructure",
                     color: "bg-slate-500",
                     icon: "🖥️",
+                    link: "https://wa.me/6283869916635?text=Hello%20i%20need%20IT%20Infrastucture%20solution%20for%20my%20business"
                   },
                   {
                     title: "Automation",
                     color: "bg-teal-500",
                     icon: "🤖",
+                    link: "https://wa.me/6283869916635?text=Hello%20i%20need%20automation%20for%20my%20business"
                   },
                   {
                     title: "Digital Marketing",
                     color: "bg-orange-500",
                     icon: "📈",
+                    link: "https://wa.me/6283869916635?text=Hello%20i%20need%20digital%20marketing%20for%20my%20business"
                   },
                   {
                     title: "Education",
                     color: "bg-amber-500",
                     icon: "🎓",
+                    link: "https://wa.me/6283869916635?text=Hello%20i%20need%20education%20solution%20for%20my%20needs"
                   },
                   {
                     title: "Cloud Services",
-                    color: "bg-sky-500",
+                    color: "bg-blue-500",
                     icon: "☁️",
+                    link: "https://wa.me/6283869916635?text=Hello%20i%20need%20cloud%20solution%20for%20my%20business"
                   },
                 ].map((service, index) => (
-                  <motion.div
+                  <motion.a
                     key={service.title}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 + index * 0.1, duration: 0.5 }}
+                    href={service.link}
                     className="flex flex-col rounded-lg bg-white p-4 shadow-md dark:bg-gray-900"
                   >
                     <div
@@ -119,7 +129,7 @@ export function ServiceHero() {
                     <h3 className="text-sm font-medium text-gray-900 dark:text-white text-wrap">
                       {service.title}
                     </h3>
-                  </motion.div>
+                  </motion.a>
                 ))}
               </div>
             </div>
