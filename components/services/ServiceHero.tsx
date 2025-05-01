@@ -120,6 +120,7 @@ export function ServiceHero() {
                     transition={{ delay: 0.4 + index * 0.1, duration: 0.5 }}
                     href={service.link}
                     className="flex flex-col rounded-lg bg-white p-4 shadow-md dark:bg-gray-900"
+                    target="_blank"
                   >
                     <div
                       className={`mb-3 flex h-12 w-12 items-center justify-center rounded-full ${service.color} text-xl text-white`}
